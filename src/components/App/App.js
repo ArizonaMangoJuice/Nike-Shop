@@ -1,5 +1,6 @@
 import Cart from '../Cart';
 import Items from '../Items';
+import List from '../List/List';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Items />
       <Cart />
+      <List />
     </div>
   );
 }

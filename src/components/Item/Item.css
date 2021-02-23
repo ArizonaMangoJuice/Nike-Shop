@@ -55,12 +55,28 @@
 }
 
 .item-button{
+    transition: .3s;
     border-radius: 5vh;
     padding: 0;
     margin: 0;
     font-size: 1.3vh;
     font-weight: bold;
     width: 13vh;
+    height: 4vh;
+    border: none;
+    background-color: var(--yellow);
+    outline: none;
+}
+
+.clicked-item{
+    outline: none;
+    transition: .3s;
+    border-radius: 5vh;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8vh;
+    font-weight: bold;
+    width: 4vh;
     height: 4vh;
     border: none;
     background-color: var(--yellow);
