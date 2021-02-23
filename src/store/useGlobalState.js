@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 const useGlobalState = () => {
-    const [state, setState] = useState({value: '', list: []});
+    const [state, setState] = useState({value: 'fa', items: []});
 
     const actions = action => {
         const {type, payload} = action;
