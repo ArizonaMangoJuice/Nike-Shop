@@ -30,7 +30,7 @@ const Item = ({title, desc, image, price, bg}) => {
                                 ...state, 
                                 items: [
                                     ...state.items,
-                                    {title,image,price, amount: 1}
+                                    {title,image,price,amount: 1,bg}
                                 ]
                             }
                         });
