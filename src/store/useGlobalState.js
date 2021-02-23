@@ -12,6 +12,9 @@ const useGlobalState = () => {
             case 'increment': 
                 return setState(payload);
             case 'decrement': 
+                console.log('inside the hook', payload)
+                return setState(payload);
+            case 'remove': 
                 return setState(payload);
             default:
                 return state;
