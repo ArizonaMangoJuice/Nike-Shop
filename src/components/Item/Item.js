@@ -1,8 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import './Item.css';
+
+import Context from '../../store/context';
 
 const Item = ({title, desc, image, price, bg}) => {
     const [isClicked, setClicked] = useState(false);
+    const {state, actions}  = useContext(Context);
 
     return (
         <div className='item'>
@@ -18,8 +21,20 @@ const Item = ({title, desc, image, price, bg}) => {
             <div className='item-bottom'>
                 <p className='price'>${price}</p>
                 <button
-
-                    onClick={() => setClicked(e => !e)} 
+                    onClick={() => {
+                        if(isClicked) return; 
+                        setClicked(e => !e);
+                        actions({
+                            type: 'setState', 
+                            payload: {
+                                ...state, 
+                                items: [
+                                    ...state.items,
+                                    {title,image,price, amount: 1}
+                                ]
+                            }
+                        });
+                    }} 
                     className={isClicked ? 'clicked-item' : 'item-button'}
                 >{isClicked ? '✓' : 'ADD TO CART'}</button>
             </div>
