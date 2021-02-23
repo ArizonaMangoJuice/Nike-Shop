@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-height: 100vh;
   font-family: 'Rubik', sans-serif;
   display: flex;
