@@ -1,7 +1,9 @@
 import React, {useContext, useState} from 'react';
 import './CartItem.css';
+import Context from '../../store/context';
 
 const CartItem = ({amount, title, image, price, bg}) => {
+    const {state, actions} = useContext(Context);
     return (
         <div className='cart-item'>
             <div className='image-container' style={{backgroundColor: bg}}>

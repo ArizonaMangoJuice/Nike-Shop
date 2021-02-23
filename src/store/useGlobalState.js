@@ -9,6 +9,10 @@ const useGlobalState = () => {
         switch (type) {
             case 'setState': 
                 return setState(payload);
+            case 'increment': 
+                return setState(payload);
+            case 'decrement': 
+                return setState(payload);
             default:
                 return state;
         }
