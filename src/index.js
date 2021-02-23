@@ -19,9 +19,9 @@ const Index = () => {
 };
 
 ReactDOM.render(
-  <React>
+  <React.StrictMode>
     <Index />
-  </React>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

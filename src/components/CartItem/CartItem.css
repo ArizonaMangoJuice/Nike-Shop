@@ -49,6 +49,7 @@
 .cart-amount{
     margin: 0 1.5vh 0 1.5vh;
     font-weight: lighter;
+    font-size: 2vh;
 }
 
 .cart-buttons{
