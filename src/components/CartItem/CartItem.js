@@ -27,7 +27,17 @@ const CartItem = ({amount, title, image, price, bg}) => {
                         });
                     }} className='cart-buttons'>&lt;</button>
                     <p className='cart-amount'>{amount}</p>
-                    <button className='cart-buttons'>&gt;</button>
+                    <button onClick={() => {
+                        let updatedItem = state.items.map(e => e.title === title ? {...e, amount: e.amount + 1} : e);
+
+                        actions({
+                            type: 'increment',
+                            payload: {
+                                ...state,
+                                items: updatedItem
+                            }
+                        });
+                    }} className='cart-buttons'>&gt;</button>
                 </div>
                 
             </div>
