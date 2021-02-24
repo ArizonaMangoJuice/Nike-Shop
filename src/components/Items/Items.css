@@ -1,5 +1,6 @@
 .items-container{
     /* border: 1px solid blue; */
+    background-color: white;
     width: 33vh;
     height: 55vh;
     overflow: auto;
@@ -10,6 +11,7 @@
     -webkit-box-shadow: 11px 9px 17px 0px rgba(0,0,0,0.31); 
     box-shadow: 11px 9px 17px 0px rgba(0,0,0,0.31);
     border-radius: 3vh;
+    z-index: 1;
 }
 
 .items-container::-webkit-scrollbar { 
@@ -41,3 +43,4 @@
     z-index: -1;
     border-radius: 50%;
 }
+
