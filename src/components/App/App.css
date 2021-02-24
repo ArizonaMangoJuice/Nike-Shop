@@ -1,7 +1,7 @@
 .App{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,8 +21,8 @@
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  border-right: 20vw solid var(--yellow);
-  border-left: 20vw solid var(--yellow);
+  border-right: 20vh solid var(--yellow);
+  border-left: 40vh solid var(--yellow);
   border-bottom: 40vh solid var(--yellow);
   overflow: hidden;
 }
