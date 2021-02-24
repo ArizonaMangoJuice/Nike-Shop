@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import './Item.css';
 
 import Context from '../../store/context';
@@ -6,6 +6,12 @@ import Context from '../../store/context';
 const Item = ({title, desc, image, price, bg}) => {
     const [isClicked, setClicked] = useState(false);
     const {state, actions}  = useContext(Context);
+
+    useEffect(() => {
+        let result = state.items.filter(e => e.title === title);
+        if(result.length < 1) setClicked(false);
+    })
+    
 
     return (
         <div className='item'>
