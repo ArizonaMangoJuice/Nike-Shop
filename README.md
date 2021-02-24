@@ -8,3 +8,6 @@ About a year ago I saw a codepen for this project. I decided to see if I can clo
 
 You can find the [codepen](https://codepen.io/mo-ro/pen/jObjGJm) here.
 
+# Screenshots of Site
+
+![Test Image 6](master/src/images/readme1.jpg)
