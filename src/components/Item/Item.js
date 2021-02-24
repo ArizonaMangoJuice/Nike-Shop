@@ -10,7 +10,7 @@ const Item = ({title, desc, image, price, bg}) => {
     useEffect(() => {
         let result = state.items.filter(e => e.title === title);
         if(result.length < 1) setClicked(false);
-    })
+    },[state.items, title])
     
 
     return (
