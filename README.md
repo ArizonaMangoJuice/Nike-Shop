@@ -10,4 +10,4 @@ You can find the [codepen](https://codepen.io/mo-ro/pen/jObjGJm) here.
 
 # Screenshots of Site
 
-![Test Image 6](master/src/images/readme1.jpg)
+![Test Image 6](https://github.com/ArizonaMangoJuice/Nike-Shop/blob/master/src/images/readme1.jpg)
