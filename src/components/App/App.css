@@ -18,7 +18,7 @@
   background-color: var(--yellow);
   animation-name: example;
   transform: rotate(-30deg);
-  animation-duration: 4s;
+  animation-duration: 15s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   border-right: 20vh solid var(--yellow);
